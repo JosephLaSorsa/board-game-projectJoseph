@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*"
+        "radio": "*",
+        "Board game project Joseph LaSorsa and James Smith": "github:josephlasorsa/board-game-project-joseph-lasorsa-and-james-smith#16adeba74122150dab9ce4a86a1fe1f0d93a5c70"
     },
     "files": [
         "main.blocks",
