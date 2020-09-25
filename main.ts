@@ -6,9 +6,9 @@ input.onButtonPressed(Button.B, function () {
         basic.showLeds(`
             # . . . .
             # . . . .
-            # . . . .
-            # . . . .
-            # . . . .
+            . . . . .
+            . . . . .
+            . . . . .
             `)
         basic.pause(2000)
         basic.clearScreen()
@@ -17,9 +17,9 @@ input.onButtonPressed(Button.B, function () {
         basic.showLeds(`
             . # . . .
             . # . . .
-            . # . . .
-            . # . . .
-            . # . . .
+            . . . . .
+            . . . . .
+            . . . . .
             `)
         basic.pause(2000)
         basic.clearScreen()
@@ -27,9 +27,9 @@ input.onButtonPressed(Button.B, function () {
         basic.showLeds(`
             . . # . .
             . . # . .
-            . . # . .
-            . . # . .
-            . . # . .
+            . . . . .
+            . . . . .
+            . . . . .
             `)
         basic.pause(2000)
         basic.clearScreen()
@@ -37,9 +37,9 @@ input.onButtonPressed(Button.B, function () {
         basic.showLeds(`
             . . . # .
             . . . # .
-            . . . # .
-            . . . # .
-            . . . # .
+            . . . . .
+            . . . . .
+            . . . . .
             `)
         basic.pause(2000)
         basic.clearScreen()
@@ -55,6 +55,12 @@ input.onButtonPressed(Button.B, function () {
         basic.pause(50)
         basic.clearScreen()
     } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else {
     	
     }
 })
