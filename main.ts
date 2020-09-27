@@ -1,5 +1,8 @@
 input.onButtonPressed(Button.A, function () {
-    Player = 0
+    Player = Player + randint(1, 6)
+    basic.showString("" + (Player))
+    basic.pause(1000)
+    basic.clearScreen()
 })
 input.onButtonPressed(Button.B, function () {
     if (Player == 1) {
@@ -52,10 +55,46 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (false) {
-    	
-    } else if (false) {
-    	
+    } else if (Player == 6) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            # . . . .
+            # . . . .
+            . . . . .
+            `)
+        basic.pause(2000)
+        basic.clearScreen()
+    } else if (Player == 7) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . # . . .
+            . # . . .
+            . . . . .
+            `)
+        basic.pause(2000)
+        basic.clearScreen()
+    } else if (Player == 8) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . . # . .
+            . . . . .
+            `)
+        basic.pause(2000)
+        basic.clearScreen()
+    } else if (Player == 8) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . # .
+            . . . # .
+            . . . . .
+            `)
+        basic.pause(2000)
+        basic.clearScreen()
     } else if (false) {
     	
     } else {
@@ -63,12 +102,16 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 input.onGesture(Gesture.Shake, function () {
-    Player = 0
+    basic.showString("" + (Points))
 })
+let Points = 0
 let Player = 0
 Player = 1
 basic.forever(function () {
     if (Player == 10) {
-        basic.showString("You won")
+        basic.showString("You got a point")
+        Points += 1
+    } else if (Player > 10) {
+        Points += -1
     }
 })
