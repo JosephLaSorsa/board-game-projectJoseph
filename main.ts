@@ -8,6 +8,10 @@ input.onButtonPressed(Button.AB, function () {
     basic.showString("" + (Points))
     basic.pause(1000)
     basic.clearScreen()
+    if (Points == 10) {
+        basic.showString("You won")
+        basic.showIcon(IconNames.Heart)
+    }
 })
 input.onButtonPressed(Button.B, function () {
     if (Player == 1) {
@@ -19,6 +23,8 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             `)
         basic.pause(2000)
+        basic.showString("why")
+        basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 2) {
         basic.showLeds(`
@@ -28,6 +34,8 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             . . . . .
             `)
+        basic.pause(2000)
+        basic.showString("are")
         basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 3) {
@@ -39,6 +47,8 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             `)
         basic.pause(2000)
+        basic.showString("you")
+        basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 4) {
         basic.showLeds(`
@@ -48,6 +58,8 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             . . . . .
             `)
+        basic.pause(2000)
+        basic.showString("still")
         basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 5) {
@@ -59,6 +71,8 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             `)
         basic.pause(2000)
+        basic.showString("playing")
+        basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 6) {
         basic.showLeds(`
@@ -68,6 +82,8 @@ input.onButtonPressed(Button.B, function () {
             # . . . .
             . . . . .
             `)
+        basic.pause(2000)
+        basic.showString("this")
         basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 7) {
@@ -132,8 +148,8 @@ input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
 })
 input.onGesture(Gesture.Shake, function () {
-    Player = 1
+    Player = randint(1, 5)
 })
 let Points = 0
 let Player = 0
-Player = 1
+Player = randint(1, 5)
