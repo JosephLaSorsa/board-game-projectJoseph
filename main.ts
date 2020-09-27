@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    Player = Player + randint(1, 6)
+    Player = 0
 })
 input.onButtonPressed(Button.B, function () {
     if (Player == 1) {
@@ -12,7 +12,6 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-        Player = 0
     } else if (Player == 2) {
         basic.showLeds(`
             . # . . .
@@ -43,16 +42,15 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player > 5) {
-        basic.showString("You lost")
+    } else if (Player == 5) {
         basic.showLeds(`
+            . . . . #
+            . . . . #
             . . . . .
-            . # . # .
-            # . . . #
-            . # # # .
+            . . . . .
             . . . . .
             `)
-        basic.pause(50)
+        basic.pause(2000)
         basic.clearScreen()
     } else if (false) {
     	
@@ -68,9 +66,9 @@ input.onGesture(Gesture.Shake, function () {
     Player = 0
 })
 let Player = 0
-Player = 0
+Player = 1
 basic.forever(function () {
-    if (Player == 5) {
+    if (Player == 10) {
         basic.showString("You won")
     }
 })
