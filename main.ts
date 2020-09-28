@@ -1,5 +1,6 @@
 input.onButtonPressed(Button.A, function () {
     Player = Player + randint(1, 6)
+    Enemy = randint(1, 14)
     basic.showString("" + (Player))
     basic.pause(2000)
     basic.clearScreen()
@@ -33,7 +34,7 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    if (Player == 1) {
+    if (Enemy == 1) {
         basic.showLeds(`
             # . . . .
             # . . . .
@@ -43,7 +44,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 2) {
+    } else if (Enemy == 2) {
         basic.showLeds(`
             . # . . .
             . # . . .
@@ -53,7 +54,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 3) {
+    } else if (Enemy == 3) {
         basic.showLeds(`
             . . # . .
             . . # . .
@@ -63,7 +64,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 4) {
+    } else if (Enemy == 4) {
         basic.showLeds(`
             . . . # .
             . . . # .
@@ -73,7 +74,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 5) {
+    } else if (Enemy == 5) {
         basic.showLeds(`
             . . . . #
             . . . . #
@@ -83,7 +84,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 6) {
+    } else if (Enemy == 6) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -93,7 +94,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 7) {
+    } else if (Enemy == 7) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -103,7 +104,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 8) {
+    } else if (Enemy == 8) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -113,7 +114,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 9) {
+    } else if (Enemy == 9) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -123,7 +124,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 10) {
+    } else if (Enemy == 10) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -133,7 +134,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 11) {
+    } else if (Enemy == 11) {
         basic.showLeds(`
             # . . . .
             # . . . .
@@ -143,7 +144,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 12) {
+    } else if (Enemy == 12) {
         basic.showLeds(`
             . # . . .
             . # . . .
@@ -153,7 +154,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 13) {
+    } else if (Enemy == 13) {
         basic.showLeds(`
             . . # . .
             . . # . .
@@ -163,7 +164,7 @@ input.onButtonPressed(Button.B, function () {
             `)
         basic.pause(2000)
         basic.clearScreen()
-    } else if (Player == 14) {
+    } else if (Enemy == 14) {
         basic.showLeds(`
             . . . # .
             . . . # .
