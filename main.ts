@@ -23,8 +23,6 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             `)
         basic.pause(2000)
-        basic.showString("why")
-        basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 2) {
         basic.showLeds(`
@@ -34,8 +32,6 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             . . . . .
             `)
-        basic.pause(2000)
-        basic.showString("are")
         basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 3) {
@@ -47,8 +43,6 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             `)
         basic.pause(2000)
-        basic.showString("you")
-        basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 4) {
         basic.showLeds(`
@@ -58,8 +52,6 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             . . . . .
             `)
-        basic.pause(2000)
-        basic.showString("still")
         basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 5) {
@@ -71,8 +63,6 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             `)
         basic.pause(2000)
-        basic.showString("playing")
-        basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 6) {
         basic.showLeds(`
@@ -82,8 +72,6 @@ input.onButtonPressed(Button.B, function () {
             # . . . .
             . . . . .
             `)
-        basic.pause(2000)
-        basic.showString("this")
         basic.pause(2000)
         basic.clearScreen()
     } else if (Player == 7) {
@@ -127,7 +115,7 @@ input.onButtonPressed(Button.B, function () {
         basic.pause(2000)
         basic.clearScreen()
     }
-    if (Player > 10) {
+    if (Player > 15) {
         Points += -1
         basic.showString("You lost a point")
         basic.showLeds(`
@@ -148,8 +136,8 @@ input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
 })
 input.onGesture(Gesture.Shake, function () {
-    Player = randint(1, 5)
+    Player = randint(1, 3)
 })
 let Points = 0
 let Player = 0
-Player = randint(1, 5)
+Player = randint(1, 3)
