@@ -5,7 +5,7 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(2000)
     basic.clearScreen()
     if (Enemy == Player) {
-        Enemy += -1
+        Points += -1
         basic.showIcon(IconNames.Angry)
         basic.pause(500)
         basic.clearScreen()
